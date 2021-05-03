@@ -8,8 +8,12 @@
 	</head>
 	<body>
 		<div id="app">
+			<h2>Bitcoin Price</h2>
+			<ul>
+				<li v-for="(rate,currency) in bpi">{{currency}}:{{rate.rate_float}}</li>
+			</ul>
 			<!-- デバッグ用表示 -->
-			<pre>{{$data}}</pre>
+			<!-- <pre>{{$data}}</pre> -->
 		</div>
 
 		<!-- 開発バージョン、便利なコンソールの警告が含まれています -->
